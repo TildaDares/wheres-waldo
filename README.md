@@ -1,24 +1,5 @@
-# README
+# Where's Waldo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Where's Waldo is a photo-tagging where users are presented with a large photograph that contains several elements the user is meant to find, e.g. Waldo, The Wizard, Wilma etc. The user will make selections for each character and they will get feedback on whether they are correct or not.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Live Site]()
