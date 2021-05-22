@@ -1,3 +1,3 @@
 class Character < ApplicationRecord
-  belongs_to :picture_id
+  belongs_to :picture
 end
