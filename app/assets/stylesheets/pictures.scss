@@ -7,6 +7,10 @@ body {
   background-color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   padding: 0.8rem 1rem 0.8rem 1rem;
   border-radius: 0.25rem;
@@ -18,9 +22,17 @@ body {
   color: #fff;
 }
 
+.btn-success:hover {
+  background-color: #276749;
+}
+
 .btn-warning {
   background-color: #faf089;
   color: black;
+}
+
+.btn-warning:hover {
+  background-color: #ecc94b;
 }
 
 .profiler-results {
