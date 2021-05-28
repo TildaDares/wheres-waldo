@@ -1,7 +1,3 @@
-// Place all the styles related to the Pictures controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
 body {
   margin: 0;
   background-color: #fff;
@@ -15,6 +11,7 @@ a {
   padding: 0.8rem 1rem 0.8rem 1rem;
   border-radius: 0.25rem;
   font-weight: 700;
+  border: none;
 }
 
 .btn-success {
@@ -29,6 +26,15 @@ a {
 .btn-warning {
   background-color: #faf089;
   color: black;
+}
+
+.btn-danger {
+  background-color: #f56565;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c53030;
 }
 
 .btn-warning:hover {
@@ -63,6 +69,7 @@ nav {
     margin-left: -20px;
   }
 }
+
 main {
   display: flex;
   justify-content: center;
@@ -112,4 +119,33 @@ main {
     justify-content: space-around;
     margin-bottom: 20px;
   }
+}
+
+.game-img {
+  width: 100%;
+  height: 100%;
+}
+
+.character {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.characters-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.characters-container img {
+  margin-right: 20px;
+}
+
+.give-up {
+  height: fit-content;
 }
