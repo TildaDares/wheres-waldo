@@ -2,21 +2,31 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../components/Home";
 import Game from "../components/Game";
-import "../../assets/stylesheets/pictures.scss";
-import store from "../../assets/images/departmentStore.jpeg";
+import slopes from "../../assets/images/skiSlopes.jpg";
 import beach from "../../assets/images/onTheBeach.jpeg";
-import city from "../../assets/images/City.jpeg";
+import town from "../../assets/images/town.jpeg";
+import wenda from "../../assets/images/wenda.jpeg";
+import waldo from "../../assets/images/waldo.png";
+import odlaw from "../../assets/images/odlaw.jpeg";
+import whitebeard from "../../assets/images/whitebeard.jpeg";
 
 const App = () => {
+  const characters = {
+    waldo: waldo,
+    wenda: wenda,
+    odlaw: odlaw,
+    whitebeard: whitebeard,
+  };
+
   const allPics = {
-    city: {
-      name: "City",
-      src: city,
+    town: {
+      name: "In Town",
+      src: town,
       id: 1,
     },
-    store: {
-      name: "Department Store",
-      src: store,
+    slopes: {
+      name: "Ski Slopes",
+      src: slopes,
       id: 2,
     },
     beach: {
@@ -29,7 +39,9 @@ const App = () => {
   const pictureRoutes = () => {
     const routesArr = [];
     for (const pic in allPics) {
+      allPics[pic].characters = characters;
       let pathName = "/play/" + allPics[pic].id;
+
       routesArr.push(
         <Route
           path={pathName}
