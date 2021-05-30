@@ -3,8 +3,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :pictures, only: [:index, :show] do
         resources :characters, only: [:index, :show]
+        resources :players, only: [:index, :create, :show]
       end
-      resources :players, only: [:index, :create, :show]
     end
   end
 
