@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :pictures, only: [:index, :show] do
         resources :characters, only: [:index, :show]
       end
-      resources :players, only: [:index, :create]
+      resources :players, only: [:index, :create, :show]
     end
   end
 
