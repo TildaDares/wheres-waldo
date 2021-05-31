@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../components/Home";
 import Game from "../components/Game";
 import slopes from "../../assets/images/skiSlopes.jpg";
-import beach from "../../assets/images/onTheBeach.jpeg";
+import beach from "../../assets/images/onTheBeach.jpg";
 import town from "../../assets/images/town.jpeg";
 import wenda from "../../assets/images/wenda.jpeg";
 import waldo from "../../assets/images/waldo.png";
