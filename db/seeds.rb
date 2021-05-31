@@ -1,5 +1,5 @@
-Picture.delete_all
 Character.delete_all
+Picture.delete_all
 
 data = {
   "In Town": {
@@ -17,10 +17,10 @@ data = {
   }, 
 
   "On the Beach": {
-    waldo: {name: "waldo", x_coord: 62, y_coord: 22.46},
-    odlaw: {name: "odlaw", x_coord: 9.62, y_coord: 21.01},
-    wenda: {name: "wenda", x_coord: 78.15, y_coord: 24.63},
-    whitebeard: {name: "whitebeard", x_coord: 26.5, y_coord: 20.8},
+    waldo: {name: "waldo", x_coord: 61.8, y_coord: 24.12},
+    odlaw: {name: "odlaw", x_coord: 10.86, y_coord: 22.77},
+    wenda: {name: "wenda", x_coord: 77.12, y_coord: 26.29},
+    whitebeard: {name: "whitebeard", x_coord: 27.01, y_coord: 22.67},
   }
 }
 
