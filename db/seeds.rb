@@ -12,7 +12,7 @@ data = {
   "Ski Slopes": {
     waldo: {name: "waldo", x_coord: 85.5, y_coord: 45.75},
     odlaw: {name: "odlaw", x_coord: 31.78, y_coord: 40.16},
-    wenda: {name: "wenda", x_coord: 48.96, y_coord: 40.26},
+    wenda: {name: "wenda", x_coord: 48.96, y_coord: 26},
     whitebeard: {name: "whitebeard", x_coord: 7.03, y_coord: 47.82},
   }, 
 
