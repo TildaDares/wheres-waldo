@@ -4,9 +4,4 @@ class Api::V1::CharactersController < ApplicationController
     characters = picture.characters.all
     render json: characters
   end
-
-  def show
-    character = Character.find(params[:id])
-    render json: character
-  end
 end
