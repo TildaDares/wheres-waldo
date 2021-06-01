@@ -9,6 +9,7 @@ import wenda from "../../assets/images/wenda.jpeg";
 import waldo from "../../assets/images/waldo.png";
 import odlaw from "../../assets/images/odlaw.jpeg";
 import whitebeard from "../../assets/images/whitebeard.jpeg";
+import Leaderboard from "../components/Leaderboard";
 
 const App = () => {
   const characters = {
@@ -41,6 +42,7 @@ const App = () => {
     for (const pic in allPics) {
       allPics[pic].characters = characters;
       let pathName = "/play/" + allPics[pic].id;
+      let leaderPathName = "/leaderboard/" + allPics[pic].id;
 
       routesArr.push(
         <Route
@@ -48,6 +50,14 @@ const App = () => {
           key={allPics[pic].id}
           exact
           render={(props) => <Game {...props} pic={allPics[pic]} />}
+        />
+      );
+      routesArr.push(
+        <Route
+          path={leaderPathName}
+          key={pic}
+          exact
+          render={(props) => <Leaderboard {...props} lid={allPics[pic].id} />}
         />
       );
     }
