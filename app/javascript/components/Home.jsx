@@ -20,7 +20,9 @@ const Home = (props) => {
               <Link to="/play/1" className="btn btn-success">
                 Play
               </Link>
-              <a className="btn btn-warning">Leaderboard</a>
+              <Link to="/leaderboard/1" className="btn btn-warning">
+                Leaderboard
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -30,7 +32,9 @@ const Home = (props) => {
               <Link to="/play/2" className="btn btn-success">
                 Play
               </Link>
-              <a className="btn btn-warning">Leaderboard</a>
+              <Link to="/leaderboard/2" className="btn btn-warning">
+                Leaderboard
+              </Link>
             </div>
           </div>
           <div className="card">
@@ -40,7 +44,9 @@ const Home = (props) => {
               <Link to="/play/3" className="btn btn-success">
                 Play
               </Link>
-              <a className="btn btn-warning">Leaderboard</a>
+              <Link to="/leaderboard/3" className="btn btn-warning">
+                Leaderboard
+              </Link>
             </div>
           </div>
         </div>
