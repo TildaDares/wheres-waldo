@@ -25,7 +25,7 @@ const Timer = (props) => {
   }, [props.isActive, counter]);
 
   return (
-    <div className="timer">
+    <div className="timer" ref={props.timerRef}>
       <span id="min">{time.min}</span>
       <span>:</span>
       <span id="sec">{time.sec}</span>
