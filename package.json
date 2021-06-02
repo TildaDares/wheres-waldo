@@ -2,6 +2,7 @@
   "name": "wheres-waldo",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-methods": "^7.13.0",
     "@babel/preset-react": "^7.13.13",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
