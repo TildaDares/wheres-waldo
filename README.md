@@ -4,4 +4,4 @@ Where's Waldo is a photo-tagging where users are presented with a large photogra
 
 Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/)
 
-[Live Site]()
+[Live Site](https://where-is-wally.herokuapp.com/)
