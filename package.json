@@ -1,6 +1,7 @@
 {
   "name": "wheres-waldo",
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@babel/plugin-proposal-private-methods": "^7.13.0",
     "@babel/preset-react": "^7.13.13",
@@ -16,6 +17,11 @@
     "turbolinks": "^5.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "cd client && yarn install && yarn build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
   },
   "version": "0.1.0",
   "devDependencies": {
