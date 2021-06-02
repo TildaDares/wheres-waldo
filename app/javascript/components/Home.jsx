@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import waldo from "../../assets/images/waldo.png";
+import Nav from "./Nav";
 
 const Home = (props) => {
   const { town, beach, slopes } = props.allPics;
 
   return (
-    <div>
-      <nav>
-        <img src={waldo} alt="waldo" />
-        <p>Where's Waldo</p>
-      </nav>
+    <>
+      <Nav />
       <main>
         <div className="card-grid">
           <div className="card">
@@ -51,7 +48,7 @@ const Home = (props) => {
           </div>
         </div>
       </main>
-    </div>
+    </>
   );
 };
 
