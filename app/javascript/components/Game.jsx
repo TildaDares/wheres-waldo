@@ -70,12 +70,12 @@ const Game = (props) => {
       })
         .then((response) => {
           if (response.ok) {
+            goHome(`/leaderboard/${pic.id}`);
             return response.json();
           }
           throw new Error("Network response was not ok.");
         })
         .catch((error) => console.log(error.message));
-      goHome(`/leaderboard/${pic.id}`);
     }
   };
 

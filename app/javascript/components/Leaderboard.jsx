@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Nav from "./Nav";
+import Loader from "./Loader";
 
 const Leaderboard = (props) => {
   const [players, setPlayers] = useState([]);
+  const loaderRef = useRef();
 
   useEffect(() => {
+    loaderRef.current.style.display = "flex";
     fetch(`/api/v1/pictures/${props.lid}/players`)
       .then((response) => response.json())
       .then((data) => {
         setPlayers(data);
+        loaderRef.current.style.display = "none";
       });
   }, []);
 
@@ -27,6 +31,7 @@ const Leaderboard = (props) => {
   return (
     <div className="leaderboard">
       <Nav />
+      <Loader loaderRef={loaderRef} />
       <div className="leaderboard-main">
         <h1>Leaderboard</h1>
         <ol type="1">
